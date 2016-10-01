@@ -1,0 +1,99 @@
+@define-extend abs
+    position: absolute
+
+/* float -------------------------------------------------------------------- */
+
+[right]
+    float: right
+
+/* Position Absolute -------------------------------------------------------- */
+
+
+[abs-top]
+    @extend abs
+    top: 0
+
+[abs-bottom]
+    @extend abs
+    bottom: 0
+
+[abs-right]
+    @extend abs
+    right: 0
+
+[abs-left]
+    @extend abs
+    left: 0
+
+/* hr ----------------------------------------------------------------------- */
+
+hr
+    background-color: $primaryShadow
+    border: none
+    height: 1px
+    margin-bottom: $spacing
+    margin-top: $spacing
+
+/* Padding Top -------------------------------------------------------------- */
+
+[pt-16]
+    padding-top: 16px
+
+/* Margin Top --------------------------------------------------------------- */
+
+[mt-0]
+    margin-top: 0 !important
+[mt-xs]
+    margin-top: calc($spacing / 4)
+[mt-sm]
+    margin-top: calc($spacing / 2)
+[mt-md]
+    margin-top: $spacing
+[mt-lg]
+    margin-top: calc($spacing * 2)
+[mt-xl]
+    margin-top: calc($spacing * 4)
+
+/* margin-bottom ------------------------------------------------------------ */
+
+[mb-xs]
+    margin-bottom: calc($spacing / 4)
+[mb-sm]
+    margin-bottom: calc($spacing / 2)
+[mb-md]
+    margin-bottom: $spacing
+[mb-lg]
+    margin-bottom: calc($spacing * 2)
+[mb-xl]
+    margin-bottom: calc($spacing * 4)
+
+/* margin-right ------------------------------------------------------------- */
+
+[mr-xs]
+    margin-right: calc($spacing / 4)
+[mr-sm]
+    margin-right: calc($spacing / 2)
+[mr-md]
+    margin-right: $spacing
+[mr-lg]
+    margin-right: calc($spacing * 2)
+[mr-xl]
+    margin-right: calc($spacing * 4)
+
+/* Money -------------------------------------------------------------------- */
+
+money
+    display: block
+    text-align: right
+    symbol
+        display: block
+        float: left
+        font-size: 12px
+        opacity: 0.5
+
+/* Icon --------------------------------------------------------------------- */
+
+[icon-text]
+    float: left
+    font-size: 24px
+    margin-right: 8px

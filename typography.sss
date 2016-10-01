@@ -1,0 +1,67 @@
+@define-extend font_default
+    font-size: $fontSizeDefault
+    font-family: $fontFamily
+    color: red !@import
+
+p
+    @extend font_default
+
+h1, h2, h3, h4, h5, h6
+    color: $alternativeColor
+    display: inline-block
+    font-family: $fontFamily
+    font-weight: 600
+    margin-bottom: 12px
+    margin-top: 24px
+    > [icon]
+        margin-right: $spacing
+
+h1
+    font-size: calc($fontSizeDefault * 2)
+h2
+    font-size: calc($fontSizeDefault * 1.8)
+h3
+    font-size: calc($fontSizeDefault * 1.6)
+    &[circle]
+        line-height: 32px
+        [icon]
+            background-color: $alternativeColor
+            border-radius: 16px
+            color: white
+            display: block
+            float: left
+            height: 32px
+            line-height: 32px
+            margin-right: calc($spacing / 2)
+            text-align: center
+            width: 32px
+h4
+    font-size: calc($fontSizeDefault * 1.4)
+h5
+    font-size: calc($fontSizeDefault * 1.2)
+h6
+    font-size: calc($fontSizeDefault)
+
+line
+    height: 2px
+    display: block
+    background-color: $alternativeColor
+    margin-top: $spacing
+    margin-bottom: $spacing
+
+/* Font Size ---------------------------------------------------------------- */
+
+[fs-12]
+    font-size: 12px
+[fs-20]
+    font-size: 20px
+
+/* Color -------------------------------------------------------------------- */
+
+[c-success]
+    color: green
+[c-danger]
+    color: red
+
+[c-primary]
+    color: $primaryColor

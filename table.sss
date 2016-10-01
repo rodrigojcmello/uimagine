@@ -1,0 +1,28 @@
+[tb]
+    @extend font_default
+    border-collapse: collapse
+    tr:hover td
+        background-color: $primaryColor
+        color: white
+        cursor: pointer
+        border-color: color($primaryColor blackness(+ 8%))
+    th
+        color: $alternativeColor
+    th, td
+        border: 1px solid color(black lightness(90%))
+        line-height: 24px
+        padding: calc($spacing / 2)
+        position: relative
+    tr.fix-border-top
+        th, td
+            border-bottom: none
+            span.fix-border-top
+                background-color: color($primaryColor blackness(+ 8%))
+                bottom: -1px
+                height: 1px
+                left: -1px
+                position: absolute
+                width: 105%
+            &:last-child span.fix-border-top
+                left: auto
+                right: -1px
